@@ -78,12 +78,28 @@ public class Main {
         employee2.city = "Kocaeli";
         employee2.phone = "0532-123-4567";
         employee2.password = "1453";
-        employee2.salary = 999999999;
+        employee2.salary = 9999999;
         employee2.position = "Junior Software Developer";
         employee2.department = "IT";
         employee2.company = "Atatürk University";
         employee2.workHoursInMonth = 53;
         employeeManager.addEmployee(employee2);
+
+        Customer customer2 = new Customer();
+        customer2.firstName = "Mustafa";
+        customer2.lastName = "Islek";
+        customer2.age = 25;
+        customer2.id = 123456789;
+        customer2.email = "<EMAIL>";
+        customer2.address = "Uskudar Altunizade";
+        customer2.city = "Istanbul";
+        customer2.phone = "0532-123-4567";
+        customer2.password = "<PASSWORD>";
+        customer2.creditCardNumber = 1234567890;
+        customer2.accountNumber = 123456789;
+        customer2.points = 999;
+        customerManager.addCustomer(customer2);
+
 
 
         System.out.println("============Customers List==============");
@@ -94,7 +110,8 @@ public class Main {
         personManager.listPersons();
         System.out.println("============Best Employee==============");
         employeeManager.getBestEmployee();
-
+        System.out.println("============Best Customer==============");
+        customerManager.bestCustomer();
 
 
 

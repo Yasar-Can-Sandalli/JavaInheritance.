@@ -23,7 +23,7 @@ public class EmployeeManager {
                 bestEmployee = employee;
             }
         }
-        System.out.println("Best employee: " + bestEmployee.firstName + " " + bestEmployee.lastName);
+        System.out.println("Best employee: " + bestEmployee.firstName + " " + bestEmployee.lastName + " " + bestEmployee.salary);
     }
 
     public void addEmployee(Employee employee) {
